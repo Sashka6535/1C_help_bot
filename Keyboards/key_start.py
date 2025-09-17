@@ -25,10 +25,11 @@ start_menu = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(text="Зв'язок з БСЦ📨",
                                  callback_data=BuyCallbackFactory(item_name="choice_contact_bsc").pack()
-                                 ),
-            InlineKeyboardButton(text="Файл з інструкцією📥",
-                                 callback_data=BuyCallbackFactory(item_name="choice_contact_bsc").pack()
-                                 , url=link_google_photo + "1tstBKGSZM3t36gqf9K18GxCaXePU-E7K")
+                                 )
+            #,
+            #InlineKeyboardButton(text="Файл з інструкцією📥",
+            #                     callback_data=BuyCallbackFactory(item_name="choice_contact_bsc").pack()
+            #                     , url=link_google_photo + "1tstBKGSZM3t36gqf9K18GxCaXePU-E7K")
         ]
     ]
 )

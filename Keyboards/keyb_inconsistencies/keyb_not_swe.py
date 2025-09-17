@@ -16,12 +16,12 @@ inconsis_not_swe = InlineKeyboardMarkup(
                 callback_data=BuyCallbackFactory(item_name="inst_ka").pack()
             )
         ],
-        [
-            InlineKeyboardButton(
-                text="Встановили ТО в ТТ іншого складу?",
-                callback_data=BuyCallbackFactory(item_name="inst_other").pack()
-            )
-        ],
+        #[
+        #    InlineKeyboardButton(
+        #        text="Встановили ТО в ТТ іншого складу?",
+        #        callback_data=BuyCallbackFactory(item_name="inst_other").pack()
+        #    )
+        #],
         [
             InlineKeyboardButton(
                 text="🔙 Назад",

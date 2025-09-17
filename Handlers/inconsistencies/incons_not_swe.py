@@ -63,19 +63,19 @@ async def handle_back_not_swe(callback: CallbackQuery, state: FSMContext):
     await callback.answer()
 
 
-@not_swe_router.callback_query(BuyCallbackFactory.filter(F.item_name == "inst_other"))
-async def handle_back_not_swe(callback: CallbackQuery, state: FSMContext):
-    await edit_or_send_message(
-        bot=callback.bot,
-        chat_id=callback.message.chat.id,
-        state=state,
-        text="<b>✅ Встановили ТО в ТТ іншого складу?</b>\n\n"
-             "<b>При встановленні ТО в ТТ змінився склад відповідальний?</b>\n"
-             "Необхідно надати запит на \n"
-             f'👉 {capex}\n'
-             "який склад фактично відповідальний за ТО.",
-        photo=link_google_photo + "1DW0iX5US4UyewmJnOx5fRxZOlk-EJqoz",
-        parse_mode="HTML",
-        reply_markup=inconsis_not_swe_ex
-    )
-    await callback.answer()
+#@not_swe_router.callback_query(BuyCallbackFactory.filter(F.item_name == "inst_other"))
+#async def handle_back_not_swe(callback: CallbackQuery, state: FSMContext):
+#    await edit_or_send_message(
+#        bot=callback.bot,
+#        chat_id=callback.message.chat.id,
+#        state=state,
+#        text="<b>✅ Встановили ТО в ТТ іншого складу?</b>\n\n"
+#             "<b>При встановленні ТО в ТТ змінився склад відповідальний?</b>\n"
+#             "Необхідно надати запит на \n"
+#             f'👉 {capex}\n'
+#             "який склад фактично відповідальний за ТО.",
+#        photo=link_google_photo + "1DW0iX5US4UyewmJnOx5fRxZOlk-EJqoz",
+#        parse_mode="HTML",
+#        reply_markup=inconsis_not_swe_ex
+#    )
+#    await callback.answer()
